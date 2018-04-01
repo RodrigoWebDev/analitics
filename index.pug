@@ -1,0 +1,200 @@
+doctype html
+head
+    title Analitics
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/animate.min.css")
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+    link(rel="stylesheet" href="css/style.css")
+    
+body
+    .container-fluid
+        nav.text-dark.bg-light.fixed-top.p-3
+            .row
+                .col-sm-6
+                    h1 Analitics
+                .col-sm-6.text-right
+                    a(href="#") Logo
+        .bg-dark.text-light.row.content.p-3
+            .col-md-3
+                aside
+                    .row
+                        .col-md-3
+                            img(src="img/profile.jpg" class="img-fluid rounded-circle" alt="profile")
+                        .col-md-9
+                            p Welcome, 
+                                span.font-weight-bold Isaac
+                            i(class="fas fa-envelope mr-4")
+                            i(class="fas fa-user mr-4")
+                            i(class="fas fa-cog")
+                    hr
+                    h2 Dashboard
+                    ul.list-style-none.p-0
+                        li 
+                            a(href="#" class="text-light")
+                                i.fas.fa-users
+                                |
+                                | Overview
+                        li 
+                            a(href="#" class="text-light")
+                                i.fas.fa-eye
+                                |
+                                | Views
+                        li 
+                            a(href="#" class="text-light")
+                                i.fas.fa-users
+                                |
+                                | Traffic
+                        li 
+                            a(href="#" class="text-light")
+                                i.fas.fa-bullseye
+                                |
+                                | Geo
+                        li 
+                            a(href="#" class="text-light")
+                                i.far.fa-gem
+                                |
+                                | Orders
+                        li 
+                            a(href="#" class="text-light")
+                                i.fas.fa-user
+                                |
+                                | News
+                        li 
+                            a(href="" class="text-light")
+                                i.fas.fa-user
+                                |
+                                | General
+                        li 
+                            a(href="#" class="text-light")
+                                i.fas.fa-user
+                                |
+                                | History
+                        li 
+                            a(href="#" class="text-light")
+                                i.fas.fa-cog
+                                |
+                                | settings
+            .col-md-9
+                h2 
+                    i.fas.fa-tachometer-alt
+                    |
+                    | My Dashboard
+                .row
+                    .col-sm-3.bg-danger
+                        .clearfix
+                            i.fas.fa-comment.float-left.mt-2
+                            p.float-right 52
+                        h3 Messages
+                    .col-sm-3.bg-primary
+                        .clearfix
+                            i.fas.fa-eye.float-left.mt-2
+                            p.float-right 99
+                        h3 Views
+                    .col-sm-3.bg-success
+                        .clearfix
+                            i.fas.fa-share-alt.float-left.mt-2
+                            p.float-right 23
+                        h3 Shares
+                    .col-sm-3.bg-warning
+                        .clearfix
+                            i.fas.fa-users.float-left.mt-2
+                            p.float-right 50
+                        h3 Users
+                .row
+                    .col-sm-4
+                        h2 Regions
+                        img(src="img/region.jpg" class="img-fluid" alt="region")
+                        
+                    .col-sm-8
+                        h2  Feeds
+                        table.table.table-striped.bg-light.text-dark.table-hover
+                          tbody
+                            tr
+                              th(scope='row')
+                                i.fas.fa-user.text-primary
+                              td New record, over 90 views.
+                              td 10 mins
+                            tr
+                              th(scope='row')
+                                i.fas.fa-bell.text-danger
+                              td Database error.
+                              td 15 mins
+                            tr
+                              th(scope='row')
+                                i.fas.fa-users.text-warning
+                              td New record, over 40 users.
+                              td 17 mins
+                            tr
+                              th(scope='row')
+                                i.fas.fa-comment.text-danger
+                              td New comments.
+                              td 25 mins
+                            tr
+                              th(scope='row')
+                                i.fas.fa-bookmark.text-primary
+                              td Check transactions.
+                              td 28 mins
+                            tr
+                              th(scope='row')
+                                i.fas.fa-laptop.text-danger
+                              td CPU overload.
+                              td 35 mins
+                            tr
+                              th(scope='row')
+                                i.fas.fa-share-alt.text-succes
+                              td New shares.
+                              td 39 mins
+                section
+                    h2 Countries
+                    table.table.table-striped.bg-light.text-dark.table-hover
+                      tbody
+                        tr
+                          td United States
+                          td 65%
+                        tr
+                          td UK
+                          td 15.7%
+                        tr
+                          td Russia
+                          td 5.6%
+                        tr
+                          td Spain
+                          td 2.1%
+                        tr
+                          td India
+                          td 1.9%
+                        tr
+                          td France
+                          td 1.5%
+                    a.btn.btn-primary More countries
+                        i.fas.fa-arrow-right.ml-2
+                section
+                    h2 Recent users
+                    ul.list-group.text-dark
+                      li.list-group-item.rounded-0 Cras justo odio
+                      li.list-group-item.rounded-0 Dapibus ac facilisis in
+                      li.list-group-item.rounded-0 Morbi leo risus
+                      li.list-group-item.rounded-0 Porta ac consectetur ac
+                      li.list-group-item.rounded-0 Vestibulum at eros
+
+
+                    
+                            
+                        
+    
+    
+    
+    
+    footer
+        p 
+            a(href="https://rodrigowebdev.github.io/devninja.github.io/" target="_blank") Rodrigo Queiroz
+    script(src="js/jquery.min.js")
+    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+    script(src="js/script.js")
+    script(src="js/jquery.min.js")
+    script(src="js/wow.min.js")
+    script new WOW().init();
+    
+                        
+            
