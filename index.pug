@@ -11,97 +11,99 @@ body
     .container-fluid
         nav.text-dark.bg-light.fixed-top.p-3
             .row
-                .col-sm-6
+                .col-6
                     h1 Analitics
-                .col-sm-6.text-right
-                    a(href="#") Logo
+                .col-6.text-right
+                    a(href="#")
+                        img(src="img/logo.png" class="hover" alt="logo")
         .bg-dark.text-light.row.content.p-3
             .col-md-3
                 aside
                     .row
-                        .col-md-3
-                            img(src="img/profile.jpg" class="img-fluid rounded-circle" alt="profile")
-                        .col-md-9
-                            p Welcome, 
+                        .col-md-4
+                            img(src="img/profile.jpg" class="d-block mx-auto hover rounded-circle" alt="profile")
+                        .col-md-8
+                            p.text-center.text-md-left Welcome, 
                                 span.font-weight-bold Isaac
-                            i(class="fas fa-envelope mr-4")
-                            i(class="fas fa-user mr-4")
-                            i(class="fas fa-cog")
+                                div.d-flex.d-md-block.justify-content-center
+                                    i(class="hover fas fa-envelope mr-4")
+                                    i(class="hover fas fa-user mr-4")
+                                    i(class="hover fas fa-cog")
                     hr
-                    h2 Dashboard
-                    ul.list-style-none.p-0
-                        li 
+                    h2.text-center.text-md-left  Dashboard
+                    ul.list-style-none.p-0.text-center.text-md-left 
+                        li.my-2 
                             a(href="#" class="text-light")
                                 i.fas.fa-users
                                 |
                                 | Overview
-                        li 
+                        li.my-2 
                             a(href="#" class="text-light")
                                 i.fas.fa-eye
                                 |
                                 | Views
-                        li 
+                        li.my-2 
                             a(href="#" class="text-light")
                                 i.fas.fa-users
                                 |
                                 | Traffic
-                        li 
+                        li.my-2 
                             a(href="#" class="text-light")
                                 i.fas.fa-bullseye
                                 |
                                 | Geo
-                        li 
+                        li.my-2 
                             a(href="#" class="text-light")
                                 i.far.fa-gem
                                 |
                                 | Orders
-                        li 
+                        li.my-2 
                             a(href="#" class="text-light")
                                 i.fas.fa-user
                                 |
                                 | News
-                        li 
+                        li.my-2 
                             a(href="" class="text-light")
                                 i.fas.fa-user
                                 |
                                 | General
-                        li 
+                        li.my-2 
                             a(href="#" class="text-light")
                                 i.fas.fa-user
                                 |
                                 | History
-                        li 
+                        li.my-2 
                             a(href="#" class="text-light")
                                 i.fas.fa-cog
                                 |
                                 | settings
             .col-md-9
-                h2 
+                h2.text-center.text-md-left 
                     i.fas.fa-tachometer-alt
                     |
                     | My Dashboard
-                .row
-                    .col-sm-3.bg-danger
+                .row.my-3
+                    .col-sm-3.bg-danger.hover
                         .clearfix
                             i.fas.fa-comment.float-left.mt-2
                             p.float-right 52
                         h3 Messages
-                    .col-sm-3.bg-primary
+                    .col-sm-3.bg-primary.hover
                         .clearfix
                             i.fas.fa-eye.float-left.mt-2
                             p.float-right 99
                         h3 Views
-                    .col-sm-3.bg-success
+                    .col-sm-3.bg-success.hover
                         .clearfix
                             i.fas.fa-share-alt.float-left.mt-2
                             p.float-right 23
                         h3 Shares
-                    .col-sm-3.bg-warning
+                    .col-sm-3.bg-warning.hover
                         .clearfix
                             i.fas.fa-users.float-left.mt-2
                             p.float-right 50
                         h3 Users
-                .row
+                .row.my-5
                     .col-sm-4
                         h2 Regions
                         img(src="img/region.jpg" class="img-fluid" alt="region")
@@ -145,7 +147,21 @@ body
                                 i.fas.fa-share-alt.text-succes
                               td New shares.
                               td 39 mins
-                section
+                section.my-5
+                    h2.mb-3 General Stats
+                    h3 New Visitors
+                    .progress.my-3.rounded-0(style='height: 40px;')
+                      .progress-bar.bg-success(role='progressbar', style='width: 25%;', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100') 25%
+                    h3 New Users
+                    .progress.my-3.rounded-0(style='height: 40px;')
+                      .progress-bar.bg-warning(role='progressbar', style='width: 50%;', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100') 50%
+                    h3 Bounce Rate
+                    .progress.my-3.rounded-0(style='height: 40px;')
+                      .progress-bar.bg-danger(role='progressbar', style='width: 75%;', aria-valuenow='25', aria-valuemin='0', aria-valuemax='100') 75%
+
+
+
+                section.my-5
                     h2 Countries
                     table.table.table-striped.bg-light.text-dark.table-hover
                       tbody
@@ -169,26 +185,69 @@ body
                           td 1.5%
                     a.btn.btn-primary More countries
                         i.fas.fa-arrow-right.ml-2
-                section
+                section.my-5
                     h2 Recent users
                     ul.list-group.text-dark
-                      li.list-group-item.rounded-0 Cras justo odio
-                      li.list-group-item.rounded-0 Dapibus ac facilisis in
-                      li.list-group-item.rounded-0 Morbi leo risus
-                      li.list-group-item.rounded-0 Porta ac consectetur ac
-                      li.list-group-item.rounded-0 Vestibulum at eros
-
-
-                    
-                            
+                      li.list-group-item.rounded-0 
+                        img(src="img/user1.jpg" class="rounded-circle hover w-25" alt="user1")
+                        | Jill
+                      li.list-group-item.rounded-0 
+                        img(src="img/user2.jpg" class="rounded-circle hover w-25" alt="user2")
+                        | Mike
+                      li.list-group-item.rounded-0 
+                        img(src="img/user3.jpg" class="rounded-circle hover w-25" alt="user3")
+                        | Carl
                         
-    
-    
-    
-    
-    footer
-        p 
-            a(href="https://rodrigowebdev.github.io/devninja.github.io/" target="_blank") Rodrigo Queiroz
+                section.my-5
+                    h2 Recent Comments 
+                    .row.py-3
+                        .col-sm-3
+                            img(src="img/user4.jpg" class="hover img-fluid rounded-circle" alt="user")
+                        .col-sm-9
+                            h3 Bob
+                            span Sep 29, 2014, 9:12 PM
+                            p Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .row.py-3
+                        .col-sm-3
+                            img(src="img/user5.jpg" class="hover img-fluid rounded-circle" alt="user")
+                        .col-sm-9
+                            h3 Jane
+                            span Sep 28, 2014, 10:15 PM
+                            p Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                section.my-5
+                    .row
+                        .col-md-4
+                            h3 Demografic
+                            .progress.rounded-0(style="height:10px;")
+                                .progress-bar.w-100.bg-info(role='progressbar', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                            ul.list-style-none.p-0.my-3
+                                li.my-2 Language
+                                li.my-2 Country
+                                li.my-2 City
+
+                        .col-md-4
+                            h3 System
+                            .progress.rounded-0(style="height:10px;")
+                                .progress-bar.w-100.bg-success(role='progressbar', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                            ul.list-style-none.p-0.my-3
+                                li.my-2 Browser
+                                li.my-2 OS
+                                li.my-2 More
+
+                        .col-md-4
+                            h3 Target
+                            .progress.rounded-0(style="height:10px;")
+                              .progress-bar.w-100.bg-warning(role='progressbar', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                            ul.list-style-none.p-0.my-3
+                                li.my-2 Users
+                                li.my-2 Geo
+                                li.my-2 Interests
+                                
+                    
+        footer.py-4
+            p.text-center.m-0
+                a(href="https://rodrigowebdev.github.io/devninja.github.io/" target="_blank") Rodrigo Queiroz
+            
     script(src="js/jquery.min.js")
     script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
     script(src="js/script.js")

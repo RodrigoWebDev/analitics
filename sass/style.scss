@@ -5,3 +5,47 @@
 .list-style-none{
     list-style: none;
 }
+
+.hover:hover{
+   opacity:0.5;
+   cursor:pointer;
+   transition:0.3s;    
+}
+
+//NAV
+
+nav{
+    img{
+        width:60px;
+    }
+}
+
+//ASIDE
+@media screen and (min-width:768px){
+    aside{
+        img{
+            width:90px;
+        }
+    }
+}
+
+@media screen and (max-width:1140px){
+    aside{
+        img{
+            width:70px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    aside{
+        img{
+            width:50%;
+        }
+    }
+}
+
+
+
